@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: black;
+  color: white;
+}
+
+.font-orbitron {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: inset(71% 0 10% 0);
+    transform: translate(-2px, 2px);
+  }
+  20% {
+    clip-path: inset(29% 0 71% 0);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    clip-path: inset(83% 0 1% 0);
+    transform: translate(3px, 1px);
+  }
+  60% {
+    clip-path: inset(96% 0 3% 0);
+    transform: translate(-3px, -2px);
+  }
+  80% {
+    clip-path: inset(75% 0 16% 0);
+    transform: translate(2px, -1px);
+  }
+  100% {
+    clip-path: inset(100% 0 1% 0);
+    transform: translate(1px, 2px);
+  }
+}
